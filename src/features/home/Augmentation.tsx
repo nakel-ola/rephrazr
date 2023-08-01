@@ -31,7 +31,7 @@ export function Augmentation(props: Props) {
         </span>{" "}
       </h1>
 
-      <div className="relative max-w-sm lg:max-w-2xl mt-16">
+      <div className="relative max-w-sm lg:max-w-2xl px-2 mt-16">
         <img
           src="/svgs/spickes.svg"
           alt=""

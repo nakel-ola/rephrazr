@@ -22,7 +22,7 @@ export const HeroSection = (props: Props) => {
         <img
           src="/svgs/cup.svg"
           alt=""
-          className="absolute top-[80%] right-[15%] h-7 lg:h-fit"
+          className="absolute top-[90%] lg:top-[80%] right-[15%] h-7 lg:h-fit"
         />
         <h1 className="text-4xl font-bold tracking-tight sm:text-7xl text-center ">
           Write articles that{" "}

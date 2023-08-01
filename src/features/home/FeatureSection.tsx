@@ -25,7 +25,7 @@ const CardRow = (props: CardRowProps) => {
   const { description, image, label, title, imageSmall,imageIllu } = props;
   return (
     <div className="flex flex-col lg:flex-row justify-between my-10 w-[90%]">
-      <div className="relative max-w-full lg:max-w-sm space-y-3">
+      <div className="relative max-w-full lg:max-w-md space-y-3">
         <img src={imageIllu} alt="" className="absolute -top-10 left-32" />
         <p className="font-medium text-gray-600 text-center lg:text-start">
           {label}
@@ -35,7 +35,7 @@ const CardRow = (props: CardRowProps) => {
           {title}
         </h1>
 
-        <p className="max-w-full lg:max-w-xs text-center lg:text-start">
+        <p className="max-w-full lg:max-w-sm text-center lg:text-start">
           {description}
         </p>
       </div>
@@ -50,27 +50,27 @@ const CardRow = (props: CardRowProps) => {
 const items = [
   {
     label: "IDEATION",
-    title: "People-first ideas that you’ve never thought of.",
+    title: "Unveil novel, people-centric concepts that have yet to cross your mind.",
     description:
-      "Knowing what to write next is half of the challenge. Reword uses an understanding of your audience to come up with novel content ideas.",
+      "Unraveling the next step in writing is daunting. Rephrazr harnesses audience insights, inspiring inventive content concepts.",
     image: "/svgs/ideation.svg",
     imageSmall: "/svgs/ideation-small.svg",
     imageIllu: "/svgs/bulb.svg",
   },
   {
     label: "RESEARCH",
-    title: "Explore your topic without leaving the editor.",
+    title: "Dive into topics seamlessly within the editor's confines.",
     description:
-      "Winning articles begin with great research, which is why Reword brings cited insights straight to your writers, so that they know what to write.",
+      "Triumphant articles rely on stellar research; Rephrazr supplies cited insights directly to writers, fueling their creative process.",
     image: "/svgs/research.svg",
     imageSmall: "/svgs/research-small.svg",
     imageIllu: "/svgs/flying-star.svg",
   },
   {
     label: "OPTIMISATION",
-    title: "Write for your readers, not the algorithms.",
+    title: "Prioritize your readers; disregard the algorithms' sway.",
     description:
-      "Use your AI-powered topical model to detect topical blindspots in your content that are holding your performance back.",
+      "Employ your AI-driven topical model to unearth content blindspots limiting your performance.",
     image: "/svgs/optimisation.svg",
     imageSmall: "/svgs/optimisation-small.svg",
     imageIllu: "/svgs/checkmark.svg",

@@ -9,11 +9,11 @@ export const CTASection = (props: Props) => {
     <div className="px-5 lg:px-10 py-20 w-full flex items-center justify-center">
       <div className="lg:w-[85%] min-h-[400px] text-center lg:text-left bg-primary rounded-xl shadow-[3px_3px_0px_black] border-2 border-neutral-700 flex items-center flex-col justify-center p-5">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-5xl text-center">
-          Start training your own AI <br /> assistant with Reword.
+          Initiate AI assistant <br /> training using Rephrazr.
         </h2>
         <p className="mt-6 text-lg leading-8 text-center text-gray-dark dark:text-gray-light max-w-lg text-white">
-          Reword is designed to become part of your team, embracing
-          collaborative AI to help you write better articles for your readers.
+          Rephrazr integrates seamlessly, fostering collaborative AI to enhance
+          articles for readers.
         </p>
 
         <div className="mt-10 flex items-center justify-center flex-col lg:flex-row  gap-8">

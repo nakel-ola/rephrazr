@@ -40,7 +40,7 @@ export const Footer = (props: Props) => {
       </div>
 
       <div className="">
-        <p className="text-white text-center py-5">All rights reserved - Reword 2022</p>
+        <p className="text-white text-center py-5">All rights reserved - Rephrazr 2022</p>
       </div>
     </div>
   );

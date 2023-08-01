@@ -25,7 +25,7 @@ export const HeroSection = (props: Props) => {
           className="absolute top-[90%] lg:top-[80%] right-[15%] h-7 lg:h-fit"
         />
         <h1 className="text-4xl font-bold tracking-tight sm:text-7xl text-center ">
-          Write articles that{" "}
+          Create articles that{" "}
           <span
             className="text-primary"
             style={{
@@ -37,12 +37,12 @@ export const HeroSection = (props: Props) => {
           >
             perform
           </span>{" "}
-          <br /> with an editor that thinks.
+          <br /> with an astute editor.
         </h1>
 
         <p className="mt-5 text-center">
-          Reword helps your team collaborate ethically with AI, so that <br />{" "}
-          you can write outstanding articles for your readers.
+          Rephrazr enables ethical AI-driven collaboration, empowering <br />{" "}
+          your team to produce exceptional articles for your readers
         </p>
 
         <div className="mt-10 flex items-center justify-center flex-col lg:flex-row  gap-8">

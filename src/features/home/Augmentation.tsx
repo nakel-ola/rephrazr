@@ -15,8 +15,7 @@ export function Augmentation(props: Props) {
       </p>
 
       <h1 className="text-4xl font-bold tracking-tight sm:text-5xl text-center ">
-        Collaborate with an AI trained <br />
-        on your published{" "}
+        Effortlessly collaborate with AI trained <br /> on your published{" "}
         <span
           className="text-primary"
           style={{
@@ -67,15 +66,15 @@ export function Augmentation(props: Props) {
 
 const items = [
   {
-    name: "Add natural internal links, with an AI that’s aware.",
+    name: "Add natural internal links, with an AI that's mindful.",
     image: "/svgs/aug-1.svg",
   },
   {
-    name: "Unbeatable intelligence, trained by your own words.",
+    name: "Matchless intellect, shaped by your very own words.",
     image: "/svgs/aug-2.svg",
   },
   {
-    name: "Use commands to accomplish anything.",
+    name: "Harness commands for limitless achievements.",
     image: "/svgs/aug-3.png",
   },
 ];

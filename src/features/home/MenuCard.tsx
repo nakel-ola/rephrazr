@@ -2,6 +2,7 @@ import { NeuButton } from "@/components/NeuButton";
 import { motion } from "framer-motion";
 import { CloseSquare } from "iconsax-react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useEffect, useRef } from "react";
 import { useLockedBody, useOnClickOutside, useWindowSize } from "usehooks-ts";
 import { navigation } from "./Navbar";
@@ -16,6 +17,7 @@ const MenuCard = (props: Props) => {
   const ref = useRef<HTMLDivElement>(null);
   const [_, setIsLocked] = useLockedBody(true);
   const screen = useWindowSize();
+  const router = useRouter();
 
   useOnClickOutside(ref, () => {
     setIsLocked(false);
@@ -34,7 +36,7 @@ const MenuCard = (props: Props) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="z-50 lg:hidden fixed top-0 left-0 w-full h-screen backdrop-blur-[3px] bg-black/25"
+      className="z-[9999] lg:hidden fixed top-0 left-0 w-full h-screen backdrop-blur-[3px] bg-black/25"
     >
       <div className="relative">
         <div className="relative h-full w-full blur-sm bg-black/10"></div>
@@ -75,7 +77,7 @@ const MenuCard = (props: Props) => {
               </Link>
             ))}
 
-            <Link href="auth/login">
+            <Link href="/auth/sign_in">
               <li className="hover:bg-slate-100 text-black py-2 mb-2 rounded-md pl-3 font-medium">
                 Login
               </li>
@@ -83,7 +85,9 @@ const MenuCard = (props: Props) => {
           </ul>
 
           <div className="px-5 space-y-5 py-5">
-            <NeuButton>Start free with email</NeuButton>
+            <NeuButton onClick={() => router.push("/auth/sign_up")}>
+              Start free with email
+            </NeuButton>
           </div>
         </motion.div>
       </div>

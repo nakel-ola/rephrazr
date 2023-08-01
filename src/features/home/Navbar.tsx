@@ -2,6 +2,7 @@ import { NeuButton } from "@/components/NeuButton";
 import { AnimatePresence } from "framer-motion";
 import { Menu } from "iconsax-react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { Fragment, useRef, useState } from "react";
 import { useOnClickOutside } from "usehooks-ts";
 import MenuCard from "./MenuCard";
@@ -9,6 +10,7 @@ import MenuCard from "./MenuCard";
 type Props = {};
 
 export const Navbar = (props: Props) => {
+  const router = useRouter();
   const menuRef = useRef<HTMLDivElement>(null);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +19,7 @@ export const Navbar = (props: Props) => {
 
   return (
     <Fragment>
-      <nav className="px-5 lg:px-10 py-3 sticky top-0 z-50 flex items-center justify-between bg-primary-light">
+      <nav className="px-5 lg:px-10 py-3 sticky top-0 z-[999] flex items-center justify-between bg-primary-light">
         <Link href="/" className="">
           <p className="font-mono text-3xl font-bold">Rephrazr</p>
         </Link>
@@ -37,8 +39,12 @@ export const Navbar = (props: Props) => {
         </NeuButton>
 
         <div className="space-x-8 hidden lg:block">
-          <button className="">Login</button>
-          <NeuButton>Start writing for free</NeuButton>
+          <Link href="/auth/sign_in" className="cursor-pointer">
+            Login
+          </Link>
+          <NeuButton onClick={() => router.push("/auth/sign_up")}>
+            Start writing for free
+          </NeuButton>
         </div>
       </nav>
 

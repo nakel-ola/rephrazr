@@ -29,7 +29,7 @@ export const Footer = (props: Props) => {
 
               <ul className="space-y-2 mt-5">
                 {item.list.map((data, index) => (
-                  <li key={index} className="text-gray-400 whitespace-nowrap">
+                  <li key={index} className="text-gray-light whitespace-nowrap">
                     <Link href={data.href}>{data.name}</Link>
                   </li>
                 ))}
@@ -40,7 +40,9 @@ export const Footer = (props: Props) => {
       </div>
 
       <div className="">
-        <p className="text-white text-center py-5">All rights reserved - Rephrazr 2022</p>
+        <p className="text-white text-center py-5">
+          All rights reserved - Rephrazr 2022
+        </p>
       </div>
     </div>
   );

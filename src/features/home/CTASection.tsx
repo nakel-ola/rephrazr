@@ -11,7 +11,7 @@ export const CTASection = (props: Props) => {
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-5xl text-center">
           Initiate AI assistant <br /> training using Rephrazr.
         </h2>
-        <p className="mt-6 text-lg leading-8 text-center text-gray-dark dark:text-gray-light max-w-lg text-white">
+        <p className="mt-6 text-lg leading-8 text-center max-w-lg text-white">
           Rephrazr integrates seamlessly, fostering collaborative AI to enhance
           articles for readers.
         </p>

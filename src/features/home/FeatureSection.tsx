@@ -27,7 +27,7 @@ const CardRow = (props: CardRowProps) => {
     <div className="flex flex-col lg:flex-row justify-between my-10 w-[90%]">
       <div className="relative max-w-full lg:max-w-md space-y-3">
         <img src={imageIllu} alt="" className="absolute -top-10 left-32" />
-        <p className="font-medium text-gray-600 text-center lg:text-start">
+        <p className="font-medium text-gray text-center lg:text-start">
           {label}
         </p>
 

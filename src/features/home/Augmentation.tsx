@@ -10,20 +10,14 @@ export function Augmentation(props: Props) {
 
   return (
     <div className="flex items-center justify-center flex-col mt-10">
-      <p className="font-medium text-gray-600 text-center lg:text-start">
+      <p className="font-medium text-gray text-center lg:text-start">
         AUGMENTATION
       </p>
 
       <h1 className="text-4xl font-bold tracking-tight sm:text-5xl text-center ">
         Effortlessly collaborate with AI trained <br /> on your published{" "}
         <span
-          className="text-primary"
-          style={{
-            backgroundImage: "url(/svgs/squiggle-line.svg)",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "50% 95%",
-            backgroundSize: "10.3125rem",
-          }}
+          className="text-primary bg-no-repeat [backgroundPosition:_50%_95%] [backgroundSize:_10.3125rem] bg-[url(/svgs/squiggle-line.svg)]"
         >
           articles.
         </span>{" "}
@@ -55,7 +49,7 @@ export function Augmentation(props: Props) {
       <div className="grid grid-cols-2 lg:grid-cols-3 max-w-[90%] lg:max-w-[80%] gap-5 lg:gap-10 mt-20">
         {items.map((item, index) => (
           <div key={index} className="">
-            <p className="lg:text-2xl font-medium mb-5">{item.name}</p>
+            <p className="text-lg lg:text-2xl font-medium mb-5">{item.name}</p>
             <img src={item.image} alt="" className="" />
           </div>
         ))}

@@ -7,10 +7,12 @@ import { replaceColor, replaceLottieColors } from "@/lib/replaceLottieColor";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { Google } from "iconsax-react";
 import { getColors } from "lottie-colorify";
+import { useRouter } from "next/router";
 
 type Props = {};
 
 export const HeroSection = (props: Props) => {
+  const router = useRouter();
   return (
     <div className="relative pt-20 flex items-center justify-center flex-col">
       <div className="relative w-full  flex items-center justify-center flex-col">
@@ -26,15 +28,7 @@ export const HeroSection = (props: Props) => {
         />
         <h1 className="text-4xl font-bold tracking-tight sm:text-7xl text-center ">
           Create articles that{" "}
-          <span
-            className="text-primary"
-            style={{
-              backgroundImage: "url(/svgs/squiggle-line.svg)",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "50% 95%",
-              backgroundSize: "10.3125rem",
-            }}
-          >
+          <span className="text-primary bg-no-repeat [backgroundPosition:_50%_95%] [backgroundSize:_10.3125rem] bg-[url(/svgs/squiggle-line.svg)]">
             perform
           </span>{" "}
           <br /> with an astute editor.
@@ -50,7 +44,12 @@ export const HeroSection = (props: Props) => {
             <Google variant="Broken" className="mr-2" />
             Start free with Google
           </NeuButton>
-          <NeuButton variant="outline">Start free with email</NeuButton>
+          <NeuButton
+            onClick={() => router.push("/auth/sign_up")}
+            variant="outline"
+          >
+            Start free with email
+          </NeuButton>
         </div>
       </div>
 

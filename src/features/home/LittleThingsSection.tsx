@@ -7,7 +7,7 @@ type Props = {};
 export const LittleThingsSection = (props: Props) => {
   return (
     <div className="flex items-center justify-center flex-col mt-24">
-      <p className="font-medium text-gray-600 text-center lg:text-start">
+      <p className="font-medium text-gray text-center lg:text-start">
         THOSE TINY DETAILS
       </p>
 

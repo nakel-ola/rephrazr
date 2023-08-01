@@ -44,7 +44,7 @@ const MenuCard = (props: Props) => {
           animate={{ marginRight: "2%" }}
           exit={{ marginRight: "-80%" }}
           ref={ref}
-          className="w-[75%] h-[400px] bg-white mt-[2%] float-right rounded-xl shadow-[3px_3px_0px_black] border-2 border-neutral-700"
+          className="w-[97%] lg:w-[75%] h-[400px] bg-white mt-[2%] float-right rounded-xl shadow-[3px_3px_0px_black] border-2 border-neutral-700"
         >
           <div className="px-5 flex items-center justify-between pt-5">
             <Link href="/">

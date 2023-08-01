@@ -12,7 +12,7 @@ const font = Signika_Negative({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={twJoin(font.className, "page-max-width")}>
+    <div className={twJoin(font.className, "mx-auto w-full max-w-7xl")}>
       <Component {...pageProps} />
     </div>
   );

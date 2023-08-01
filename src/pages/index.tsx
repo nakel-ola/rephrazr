@@ -16,11 +16,11 @@ export default function Home() {
         <Navbar />
         <HeroSection />
       </header>
-      {/* <FeatureSection />
+      <FeatureSection />
       <Augmentation />
       <LittleThingsSection />
       <CTASection />
-      <Footer /> */}
+      <Footer />
     </Fragment>
   );
 }

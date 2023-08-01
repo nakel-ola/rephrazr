@@ -2,9 +2,8 @@
 import AniJson from "@/data/screen-lottie.ani.json";
 import { replaceLottieColors } from "@/lib/replaceLottieColor";
 import { Player } from "@lottiefiles/react-lottie-player";
-import { getColors, replaceColor } from "lottie-colorify";
 import React from "react";
-import { twJoin } from "tailwind-merge";
+
 type Props = {};
 export function Augmentation(props: Props) {
   const {} = props;
@@ -31,11 +30,11 @@ export function Augmentation(props: Props) {
         </span>{" "}
       </h1>
 
-      <div className="relative max-w-sm lg:max-w-2xl px-2 mt-16">
+      <div className="relative max-w-sm lg:max-w-2xl px-5 mt-16 ">
         <img
           src="/svgs/spickes.svg"
           alt=""
-          className="absolute -bottom-14 -right-16 z-50"
+          className="absolute -bottom-12 lg:-bottom-14 -right-0 h-16 lg:h-fit lg:-right-10 z-50"
         />
         <Player
           autoplay
@@ -47,6 +46,7 @@ export function Augmentation(props: Props) {
             ],
             AniJson
           )}
+          className="relative"
           rendererSettings={{
             preserveAspectRatio: "xMidYMid slice",
           }}

@@ -15,13 +15,13 @@ export const LittleThingsSection = (props: Props) => {
         Everything you need to write <br /> people-first articles.
       </h1>
 
-      <div className="grid gap-10 lg:grid-cols-2 max-w-sm lg:max-w-5xl px-2 my-10">
+      <div className="grid gap-10 lg:grid-cols-2 max-w-sm lg:max-w-5xl px-5 my-10">
         {features.slice(0, 2).map((item, index) => (
           <Card key={index} {...item} />
         ))}
       </div>
 
-      <div className="grid gap-10 lg:grid-cols-3 max-w-sm lg:max-w-5xl px-2">
+      <div className="grid gap-10 lg:grid-cols-3 max-w-sm lg:max-w-5xl px-5">
         {features.slice(2).map((item, index) => (
           <Card key={index} {...item} />
         ))}

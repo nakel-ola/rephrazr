@@ -12,15 +12,15 @@ import { Fragment } from "react";
 export default function Home() {
   return (
     <Fragment>
-      <header className="">
+      <header>
         <Navbar />
         <HeroSection />
       </header>
-      <FeatureSection />
+      {/* <FeatureSection />
       <Augmentation />
       <LittleThingsSection />
       <CTASection />
-      <Footer />
+      <Footer /> */}
     </Fragment>
   );
 }

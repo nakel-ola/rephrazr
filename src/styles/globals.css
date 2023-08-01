@@ -33,10 +33,4 @@
   body {
     @apply bg-primary-light;
   }
-  .page-center {
-    @apply flex flex-col justify-center;
-  }
-  .page-max-width {
-    @apply mx-auto w-full max-w-7xl;
-  }
 }

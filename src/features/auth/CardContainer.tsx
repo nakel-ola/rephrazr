@@ -58,7 +58,7 @@ export const CardContainer = (props: PropsWithChildren<Props>) => {
             <p className="mt-2 text-center text-sm text-black">
               Changed your mind?{" "}
               <Link
-                href="/auth/sign_up"
+                href="/auth/sign_in"
                 className="font-semibold leading-6 text-primary hover:text-primary/80"
               >
                 Back to login

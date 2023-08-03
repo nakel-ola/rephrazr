@@ -1,9 +1,9 @@
-import Link from "next/link";
-import React, { ChangeEvent, FormEvent, Fragment, useState } from "react";
 import { Input } from "@/components/Input";
 import { NeuButton } from "@/components/NeuButton";
 import PasswordEye from "@/components/PasswordEye";
 import { CardContainer, Navbar } from "@/features/auth";
+import Link from "next/link";
+import React, { ChangeEvent, FormEvent, Fragment, useState } from "react";
 import { MoonLoader } from "react-spinners";
 
 export default function SignIn() {
@@ -25,7 +25,15 @@ export default function SignIn() {
   return (
     <Fragment>
       <Navbar />
-      <CardContainer isSign>
+      <CardContainer
+        isSign
+        title="Sign in to Rephrazr"
+        link={{
+          href: "/auth/sign_up",
+          label: "Sign up",
+          title: "Don't have an account yet?",
+        }}
+      >
         <form onSubmit={handleSubmit} className="space-y-6 mt-8">
           <div>
             <label

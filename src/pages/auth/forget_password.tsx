@@ -1,8 +1,8 @@
 import { CardContainer, Navbar } from "@/features/auth";
 import React, { FormEvent, Fragment, useState } from "react";
+import { MoonLoader } from "react-spinners";
 import { Input } from "../../components/Input";
 import { NeuButton } from "../../components/NeuButton";
-import { MoonLoader } from "react-spinners";
 
 export default function ForgetPassword() {
   const [email, setEmail] = useState("");
@@ -16,7 +16,15 @@ export default function ForgetPassword() {
     <Fragment>
       <Navbar />
 
-      <CardContainer isReset>
+      <CardContainer
+        showGoogle={false}
+        title="Reset your password"
+        link={{
+          href: "/auth/sign_in",
+          label: "Back to login",
+          title: "Changed your mind?",
+        }}
+      >
         <form onSubmit={handleSubmit} className="space-y-6 mt-0">
           <div>
             <label

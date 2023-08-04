@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useRef } from "react";
 import { useLockedBody, useOnClickOutside, useWindowSize } from "usehooks-ts";
-import { navigation } from "./Navbar";
+import { navigation } from "../../components/Navbar";
 
 type Props = {
   onClose(): void;

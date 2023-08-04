@@ -2,23 +2,23 @@ import {
   Augmentation,
   CTASection,
   FeatureSection,
-  Footer,
   HeroSection,
   LittleThingsSection,
-  Navbar,
 } from "@/features/home";
+import Head from "next/head";
 import { Fragment } from "react";
 
 export default function Home() {
   return (
     <Fragment>
-      <Navbar />
+      <Head>
+        <title>Home | Rephrazr</title>
+      </Head>
       <HeroSection />
       <FeatureSection />
       <Augmentation />
       <LittleThingsSection />
       <CTASection />
-      <Footer />
     </Fragment>
   );
 }

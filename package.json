@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@badrap/bar-of-progress": "^0.2.2",
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "@types/node": "20.4.5",
     "@types/react": "18.2.17",

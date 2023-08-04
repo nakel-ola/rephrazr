@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { Fragment, useRef, useState } from "react";
 import { useOnClickOutside } from "usehooks-ts";
-import MenuCard from "./MenuCard";
+import MenuCard from "../features/home/MenuCard";
 
 type Props = {};
 
@@ -26,7 +26,9 @@ export const Navbar = (props: Props) => {
 
         <ul className="hidden lg:flex items-center space-x-8 ">
           {navigation.map((item, index) => (
-            <li key={index}>{item.name}</li>
+            <li key={index} className="hover:text-neutral-600">
+              <Link href={item.href}>{item.name}</Link>
+            </li>
           ))}
         </ul>
 

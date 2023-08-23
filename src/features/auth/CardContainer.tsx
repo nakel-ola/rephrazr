@@ -45,7 +45,7 @@ export const CardContainer = (props: PropsWithChildren<Props>) => {
       <div
         className={cx(
           "my-10 sm:mx-auto sm:w-full sm:max-w-sm border-2 border-black  rounded-xl shadow-[3px_3px_0px_black] bg-white p-5 ",
-          showGoogle ? "" : "divide-y-[1.5px] divide-gray-light"
+          showGoogle ? "divide-y-[1.5px] divide-gray-light" : ""
         )}
       >
         {showGoogle && (

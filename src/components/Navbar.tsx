@@ -17,7 +17,7 @@ export const Navbar = (props: Props) => {
 
   useOnClickOutside(menuRef, () => setIsMenuOpen(false));
 
-  return (
+  return !router.pathname.startsWith("/auth") ? (
     <Fragment>
       <nav className="px-5 lg:px-10 py-3 sticky top-0 z-[999] flex items-center justify-between bg-primary-light">
         <Link href="/" className="">
@@ -54,7 +54,7 @@ export const Navbar = (props: Props) => {
         {isMenuOpen && <MenuCard onClose={() => setIsMenuOpen(false)} />}
       </AnimatePresence>
     </Fragment>
-  );
+  ) : null;
 };
 
 export const navigation = [

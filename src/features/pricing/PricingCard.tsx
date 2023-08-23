@@ -66,3 +66,5 @@ const PricingCard = (props: Props) => {
 };
 
 export default PricingCard;
+
+// https://rephrazr.vercel.app/pricing
